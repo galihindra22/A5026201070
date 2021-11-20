@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Bootstrap Example (Contoh Bootstrap)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .border {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(189, 183, 183);
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #581399;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+
+    </div>
+
+    &nbsp;&nbsp;
+    <div>
+        <h2 class="header">Utilities</h2>
+
+    </div>
+
+
+
+    <div class="container">
+        &nbsp;&nbsp;
+        <p>Bootstrap 4 memiliki banyak kelas utilitas/pembantu untuk menata elemen dengan cepat tanpa menggunakan kode
+            CSS apa pun. Berikut adalah beberapa contoh pemanfaatan dari Utilities:
+
+        </p>
+        <h2>1. Batasan</h2>
+        <p>Gunakan kelas border untuk menambah atau menghapus batas dari elemen:</p>
+        <span class="border border-top-0"></span>
+        <span class="border border-right-0"></span>
+        <span class="border border-bottom-0"></span>
+        <span class="border border-left-0"></span>
+        <span class="border border-0"></span>
+        <span class="border"></span>
+
+
+    </div>
+    &nbsp;&nbsp;
+
+    <div class="container">
+        <h2>2. Lebar</h2>
+        <p class = "rounded">Atur lebar elemen dengan kelas w-*:</p>
+        <div class="w-25 bg-warning">Lebar 25%</div>
+        <div class="w-50 bg-warning">Lebar 50%</div>
+        <div class="w-75 bg-warning">Lebar 75%</div>
+        <div class="w-100 bg-warning">Lebar 100%</div>
+        <div class="w-75 bg-warning">Lebar 75%</div>
+        <div class="w-50 bg-warning">Lebar 50%</div>
+        <div class="w-25 bg-warning">Lebar 25%</div>
+    </div>
+    &nbsp;&nbsp;
+
+    <div class="container">
+        <h2>3. Warna Latar Belakang</h2>
+        <p>Kelas untuk warna latar belakang adalah: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger,
+            .bg-secondary, .bg-dark dan .bg-light.<br>Perhatikan bahwa warna latar belakang tidak mengatur warna teks,
+            jadi dalam beberapa kasus Anda ingin menggunakannya bersama dengan kelas .text-*.</p>
+        <p class="bg-primary text-white">Teks ini adalah utama.</p>
+        <p class="bg-success text-white">teks ini menginidikasi sukses.</p>
+        <p class="bg-info text-white">teks ini merepresentasikan informasi.</p>
+        <p class="bg-warning text-white">teks ini merepresentasikan peringatan.</p>
+        <p class="bg-danger text-white">teks ini merepresentasikan bahaya.</p>
+        <p class="bg-secondary text-white">warna latar belakang sekunder.</p>
+        <p class="bg-dark text-white">latar belakang abu-abu gelap.</p>
+        <p class="bg-light text-dark">latar belakang abu-abu cerah.</p>
+        &nbsp;&nbsp;
+        <p>Dan masih banyak kegunaan dari kelas Utility tersebut, lebih lengkapnya bisa melihat <a href="https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp">link ini</a></p>
+    </div>
+
+
+</body>
+
+</html>

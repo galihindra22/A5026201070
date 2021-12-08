@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html>
+@extends('layout.bahagia')
+
+@section('title', 'Tugas')
+
+
+
+@section('konten')
+
 <head>
 	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
 </head>
@@ -23,20 +29,18 @@
 		</tr>
 		@foreach($tugas as $p)
 		<tr>
-			<td>{{ $p->tugas_id }}</td>
-			<td>{{ $p->tugas_pid }}</td>
-			<td>{{ $p->tugas_tgl }}</td>
-			<td>{{ $p->tugas_ntugas }}</td>
-            <td>{{ $p->tugas_status }}</td>
+			<td>{{ $p->ID }}</td>
+			<td>{{ $p->IDPegawai }}</td>
+			<td>{{ $p->Tanggal }}</td>
+			<td>{{ $p->NamaTugas }}</td>
+            <td>{{ $p->Status }}</td>
 			<td>
-				<a href="/tugas/edit/{{ $p->tugas_id }}">Edit</a>
+				<a href="/tugas/edit/{{ $p->ID }}">Edit</a>
 				|
-				<a href="/tugas/hapus/{{ $p->tugas_id }}">Hapus</a>
+				<a href="/tugas/hapus/{{ $p->ID }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 
-
-</body>
-</html>
+@endsection

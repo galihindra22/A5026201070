@@ -29,11 +29,11 @@ class TugasController extends Controller
     {
 
 	    DB::table('tugas')->insert([
-		    'tugas_id' => $request->id,
-		    'tugas_pid' => $request->pid,
-		    'tugas_tgl' => $request->tgl,
-		    'tugas_ntugas' => $request->ntugas,
-            'tugas_status' => $request->status,
+		    'ID' => $request->id,
+		    'IDPegawai' => $request->pid,
+		    'Tanggal' => $request->tgl,
+		    'NamaTugas' => $request->ntugas,
+            'Status' => $request->status,
 	    ]);
 
 	    return redirect('/tugas');
@@ -42,7 +42,7 @@ class TugasController extends Controller
     public function edit($id)
     {
 
-	    $tugas = DB::table('tugas')->where('tugas_id',$id)->get();
+	    $tugas = DB::table('tugas')->where('ID',$id)->get();
 
 	    return view('tugas.edit',['tugas' => $tugas]);
 
@@ -50,12 +50,12 @@ class TugasController extends Controller
     public function update(Request $request)
     {
 
-	    DB::table('tugas')->where('tugas_id',$request->id)->update([
-		    'tugas_id' => $request->id,
-		    'tugas_pid' => $request->pid,
-		    'tugas_tgl' => $request->tgl,
-		    'tugas_ntugas' => $request->ntugas,
-            'tugas_status' => $request->status,
+	    DB::table('tugas')->where('ID',$request->id)->update([
+		    'ID' => $request->id,
+		    'IDPegawai' => $request->pid,
+		    'Tanggal' => $request->tgl,
+		    'NamaTugas' => $request->ntugas,
+            'Status' => $request->status,
 	    ]);
 
     	return redirect('/tugas');
@@ -63,7 +63,7 @@ class TugasController extends Controller
     public function hapus($id)
     {
 
-	    DB::table('tugas')->where('tugas_id',$id)->delete();
+	    DB::table('tugas')->where('ID',$id)->delete();
 
 
 	    return redirect('/tugas');

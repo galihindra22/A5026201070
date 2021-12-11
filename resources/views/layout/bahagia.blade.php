@@ -68,7 +68,7 @@
         <a href="/pegawai">Pegawai</a>
         <a href="/tugas">Tugas</a>
         <a href="">Mingdep</a>
-        <a href="">Praktikum</a>
+        <a href="/ikan">Praktikum</a>
       </div>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Buka</span>
     <div class="container">

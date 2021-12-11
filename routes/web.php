@@ -49,4 +49,12 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 
-
+//route ikan hiu makan tomat
+Route::get('/ikan','IkanController@index');
+Route::get('/ikan/tambah','IkanController@tambah');
+Route::post('/ikan/store','IkanController@store');
+Route::get('/ikan/edit/{id}','IkanController@edit');
+Route::post('/ikan/update','IkanController@update');
+Route::get('/ikan/hapus/{id}','IkanController@hapus');
+Route::get('/ikan/view/{id}','IkanController@detail');
+Route::get('/ikan/cari','IkanController@cari');

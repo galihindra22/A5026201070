@@ -1,24 +1,26 @@
 @extends('layout.bahagia')
 
-@section('title', 'Edit Pegawai')
+@section('title', 'Tambah Ikan')
 
-@section('judulhalaman', 'Edit Pegawai')
+@section('judulhalaman', 'Tambah Ikan')
 
 @section('konten')
 
+
+<head>
 
 </head>
 <body>
 
 
+	<h3>Data Ikan</h3>
 
-	<a href="/pegawai"> Kembali</a>
+	<a href="/ikan"> Kembali</a>
 
 	<br/>
 	<br/>
 
-	@foreach($pegawai as $p)
-	<form action="/pegawai/update" method="post">
+	<form action="/ikan/store" method="post">
 		{{ csrf_field() }}
 		Kode Ikan<input type="text" name="kodeikan" required="required"> <br/>
 		Nama Ikan <input type="text" name="namaikan" required="required"> <br/>
@@ -33,8 +35,6 @@
         Tidak Tersedia = T<br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-	@endforeach
-
 
 </body>
 

@@ -58,3 +58,9 @@ Route::post('/ikan/update','IkanController@update');
 Route::get('/ikan/hapus/{id}','IkanController@hapus');
 Route::get('/ikan/view/{id}','IkanController@detail');
 Route::get('/ikan/cari','IkanController@cari');
+
+//route belanja UAS
+Route::get('/keranjangbelanja','BelanjaController@index');
+Route::get('/keranjangbelanja/tambah','BelanjaController@tambah');
+Route::post('/keranjangbelanja/store','BelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','BelanjaController@hapus');
